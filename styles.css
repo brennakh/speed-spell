@@ -1,0 +1,72 @@
+:root {
+    --light-yellow: rgb(245, 239, 194);
+    --tangerine: rgb(231, 159, 33);
+    --bright-red: rgb(230, 44, 30);
+    --soft-red: rgb(130, 21, 25);
+    --dark-red: rgb(91, 17, 21);
+    --brown: rgb(66, 30, 19);
+}
+
+html, body {
+    background: var(--light-yellow);
+    color: var(--brown);
+    margin:0;
+    padding: 0;
+    padding-top: 10px;
+    font-family: 'Caprasimo', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    font-family: 'Caprasimo', sans-serif;
+    display: block;
+    margin: 0 auto;
+    border: 8px solid var(--bright-red);
+    border-radius: 20px;
+    background: var(--tangerine);
+
+    padding: 10px 20px;
+    /* text-transform: uppercase; */
+}
+
+h1, h4 {
+    font-size: 30px;
+    text-align:center;
+    color: var(--dark-red);
+}
+
+h2 {
+    font-size: 25px;
+}
+
+span {
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    font-family: 'Ubuntu Mono', sans-serif;
+    border: 15px solid var(--soft-red);
+    border-radius: 30px;
+    width: 75%;
+    margin: 0 auto;
+    /* outline: none; */
+    height: 100px;
+    background: var(--tangerine);
+    padding: 20px;
+    line-height: 25px;
+}
+
+textarea:disabled {
+    background-color: var(--dark-red);
+    /* border: 15px solid var(--soft-red); */
+    color: var(--light-yellow);
+}
+
+button:hover, button:disabled {
+    border: 8px solid var(--tangerine);
+    /* background-color: var(--bright-red); */
+    color: var(--light-yellow);
+}
+
